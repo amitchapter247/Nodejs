@@ -9,7 +9,7 @@ var multer  = require('multer')
 const path = require('path');
 app.use(bodyParser.json());
 var upload = multer({ dest: 'uploads/' ,
-
+// File Vallidation 
    fileFilter: function (req, file, cb) {
  
  var filetypes = /jpeg|jpg|json/;
